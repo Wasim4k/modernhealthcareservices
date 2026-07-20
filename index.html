@@ -905,6 +905,61 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-600);outline-o
 .section-more{
   display:flex;justify-content:center;margin-top:2.4rem;
 }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+section{
+    overflow:hidden;
+}
+
+@media (max-width:768px){
+
+.hero-visual,
+.about-visual,
+.choose-visual,
+.process-visual,
+.faq-visual{
+    padding:0;
+}
+
+.visual-card,
+.stat-pill{
+    max-width:calc(100% - 20px);
+}
+
+.stat-pill{
+    left:10px !important;
+    right:auto;
+}
+
+.visual-card--badge{
+    right:10px !important;
+}
+
+.visual-card--list{
+    left:10px !important;
+    right:10px !important;
+}
+
+}
+
+@media screen and (max-width:320px) and (max-height:546px) {
+
+.nav-actions .btn.btn-primary{
+    display: none;
+}
+
+}
 </style>
 </head>
 <body>
@@ -977,7 +1032,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-600);outline-o
 <div class="hero-visual" data-aos="fade-left" data-aos-delay="100">
 <div class="hero-frame">
 <!-- IMAGE SLOT: hero-main -->
-<img alt="Nurse providing care at a patient's home" class="hero-img" data-slot="hero-main" src="assets/img/placeholder-hero.svg"/>
+<img alt="Nurse providing care at a patient's home" class="hero-img" data-slot="hero-main" src="assets/img/hero-img.jpg"/>
 <!-- Status bubble, sits on the photo block -->
 <div class="status-bubble" data-aos="fade-up" data-aos-delay="300">
 <i class="fa-solid fa-phone-volume"></i>
