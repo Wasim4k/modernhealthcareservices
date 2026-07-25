@@ -1229,11 +1229,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-600);outline-o
 <h4>Contact</h4>
 <ul>
 <li><a href="tel:+917358441725">+91 73584 41725</a></li>
-<li><a href="tel:8870082305">88700 82305</a></li>
-<li><a href="tel:8438297130">84382 97130</a></li>
-<li><a href="tel:6369144846">63691 44846</a></li>
+<li><a href="tel:9003641725">+91 90036 41725</a></li>
+<li><a href="tel:8870082305">+91 88700 82305</a></li>
+<li><a href="tel:9840841725">+91 98408 41725</a></li>
 <li><a href="mailto:healthcareservisemodern@gmail.com">healthcareservisemodern@gmail.com</a></li>
-<li><a href="index.html#contact">No. 50/79, Near Power House, Kamarajar Colony, 4th St, Kodambakkam, Chennai - 600024.</a></li>
+<li><a href="index.html#contact">No. 67/21, 1st Floor, 100 Feet Road, Vadapalani, Chennai - 600026.</a></li>
 <li><a href="index.html#contact">24×7 Helpline</a></li>
 </ul>
 </div>
@@ -1248,7 +1248,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue-600);outline-o
 </div>
 </footer>
 
-<a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20home%20care%20services" rel="noopener" target="_blank">
+<a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917358441725?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20home%20care%20services" rel="noopener" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 
@@ -1413,11 +1413,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!name || !phone || !service) return;
 
-      var text = 'Hi, I would like to book an appointment.\n' +
-        'Name: ' + name + '\n' +
-        'Phone: ' + phone + '\n' +
-        'Service: ' + service +
-        (message ? '\nMessage: ' + message : '');
+      var text = '\ud83c\udfe5 *Modern Health Care Service*\n' +
+        '\u2728 New Appointment Request\n\n' +
+        '\ud83d\udc64 Name: ' + name + '\n' +
+        '\ud83d\udcde Phone: ' + phone + '\n' +
+        '\ud83e\ude7a Service: ' + service +
+        (message ? '\n\ud83d\udcdd Message: ' + message : '') +
+        '\n\n\ud83d\ude4f Please confirm my appointment. Thank you!';
 
       window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(text), '_blank');
 

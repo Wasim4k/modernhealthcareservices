@@ -1766,9 +1766,9 @@ section{
 <div>
 <strong>Phone</strong>
 <a class="contact-link" href="tel:7358441725">+91 73584 41725</a>
-<a class="contact-link" href="tel:8870082305">88700 82305</a>
-<a class="contact-link" href="tel:8438297130">84382 97130</a>
-<a class="contact-link" href="tel:6369144846">63691 44846</a>
+<a class="contact-link" href="tel:9003641725">+91 90036 41725</a>
+<a class="contact-link" href="tel:8870082305">+91 88700 82305</a>
+<a class="contact-link" href="tel:9840841725">+91 98408 41725</a>
 </div>
 </div>
 <div class="contact-card">
@@ -1782,7 +1782,7 @@ section{
 <i class="fa-solid fa-location-dot"></i>
 <div>
 <strong>Address</strong>
-<span>No. 50/79, Near Power House, Kamarajar Colony, 4th St, Kodambakkam, Chennai - 600024.</span>
+<span>No. 67/21, 1st Floor, 100 Feet Road, Vadapalani, Chennai - 600026.</span>
 </div>
 </div>
 <div class="contact-card">
@@ -1802,10 +1802,10 @@ section{
 </div>
 <div class="contact-map" data-aos="fade-left" data-aos-delay="100">
 <!-- IMAGE SLOT: contact-map -->
-<iframe allowfullscreen="" data-slot="contact-map" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=No.+50%2F79%2C+Near+Power+House%2C+Kamarajar+Colony%2C+4th+St%2C+Kodambakkam%2C+Chennai+-+600024&amp;output=embed" style="border:0;width:100%;height:100%;display:block;" title="Modern Health Care Service location map" width="100%"></iframe>
+<iframe allowfullscreen="" data-slot="contact-map" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=No.+67%2F21%2C+1st+Floor%2C+100+Feet+Road%2C+Vadapalani%2C+Chennai+-+600026&amp;output=embed" style="border:0;width:100%;height:100%;display:block;" title="Modern Health Care Service location map" width="100%"></iframe>
 <div class="visual-card contact-map-badge">
 <i class="fa-solid fa-location-dot"></i>
-<span>Kodambakkam, Chennai</span>
+<span>Vadapalani, Chennai</span>
 </div>
 </div>
 </div>
@@ -1853,12 +1853,12 @@ section{
 <div class="footer-col">
 <h4>Contact</h4>
 <ul>
-<li><a href="tel:7358441725">+91 73584 41725</a></li>
-<li><a href="tel:8870082305">88700 82305</a></li>
-<li><a href="tel:8438297130">84382 97130</a></li>
-<li><a href="tel:6369144846">63691 44846</a></li>
+<li><a href="tel:+917358441725">+91 73584 41725</a></li>
+<li><a href="tel:9003641725">+91 90036 41725</a></li>
+<li><a href="tel:8870082305">+91 88700 82305</a></li>
+<li><a href="tel:9840841725">+91 98408 41725</a></li>
 <li><a href="mailto:healthcareservisemodern@gmail.com">healthcareservisemodern@gmail.com</a></li>
-<li><a href="#contact">No. 50/79, Near Power House, Kamarajar Colony, 4th St, Kodambakkam, Chennai - 600024.</a></li>
+<li><a href="#contact">No. 67/21, 1st Floor, 100 Feet Road, Vadapalani, Chennai - 600026.</a></li>
 <li><a href="#contact">24×7 Helpline</a></li>
 </ul>
 </div>
@@ -1873,7 +1873,7 @@ section{
 </div>
 </footer>
 <!-- WhatsApp floating button -->
-<a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20home%20care%20services" rel="noopener" target="_blank">
+<a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/917358441725?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20home%20care%20services" rel="noopener" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 <!-- Scripts -->
@@ -2038,11 +2038,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!name || !phone || !service) return;
 
-      var text = 'Hi, I would like to book an appointment.\n' +
-        'Name: ' + name + '\n' +
-        'Phone: ' + phone + '\n' +
-        'Service: ' + service +
-        (message ? '\nMessage: ' + message : '');
+      var text = '\ud83c\udfe5 *Modern Health Care Service*\n' +
+        '\u2728 New Appointment Request\n\n' +
+        '\ud83d\udc64 Name: ' + name + '\n' +
+        '\ud83d\udcde Phone: ' + phone + '\n' +
+        '\ud83e\ude7a Service: ' + service +
+        (message ? '\n\ud83d\udcdd Message: ' + message : '') +
+        '\n\n\ud83d\ude4f Please confirm my appointment. Thank you!';
 
       window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(text), '_blank');
 
